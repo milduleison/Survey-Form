@@ -15,10 +15,9 @@ body {
   #cuisine-label {
     margin-bottom: 40px;
   }
- col-sm-2 {
-   background-color: brown
- }  
-col-sm-10 {
-  background-color: green
- }
+
+  fieldset {
+    margin-bottom: 100px
+  }
+
  

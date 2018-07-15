@@ -10,45 +10,40 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:400,700" rel="stylesheet"> 
     </head>
     <body>
+        <h1 id="title">Reveal the features of your eating !!!</h1>
         <div class="container">
-            <h2>Reveal the features of your eating !!!</h2>
-        <form role="form" class="form-horizontal">
+            <p id="description">Let us know your peculiarities of nutrition</p>
+            <form role="form" class="form-horizontal" id="survey-form">
             <legend>Personal information</legend>
                 <div class="form-group">
-                        <label class="col-sm-2 control-label">Name</label>
+                        <label id="name-label" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10">
-                        <input class="form-control" id="focusedInput" type="text" value="Write your name">
+                        <input class="form-control" id="name" type="text" placeholder="Write your name">
                     </div>
                 </div> 
                 <div class="form-group">
-                        <label class="col-sm-2 control-label">Email address</label>
+                        <label class="col-sm-2 control-label" id="email-label">Email address</label>
                    <div class="col-sm-10">
-                        <input class="form-control" id="focusedInput" type="email" value="Email">
+                        <input class="form-control" id="email" type="email" placeholder="Email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">Country</label>
-                        <div class="col-sm-10">
-                         <input class="form-control" id="focusedInput" type="text" value="Write the name of the country from which you came from.">
+                    <label class="col-sm-2 control-label">Country and City</label>
+                        <div class="col-sm-5">
+                         <input class="form-control" id="focusedInput" type="text" placeholder="Country">
+                    </div>
+                  <div class="col-sm-5">
+                         <input class="form-control" id="focusedInput" type="text" placeholder="City">
                     </div>
                 </div> 
-                    <div class="form-group">
-                            <label class="col-sm-2 control-label">How old are you?</label>
-                            <div class="col-sm-10">
-                            <select class="form-control" id="sel1">
-                              <option value=null>Please select your Age</option>
-                              <option value="18 - 25">18 - 25</option>
-                              <option value="26 - 35">26 - 35</option>
-                              <option value="36 - 45">36 - 45</option>
-                              <option value="46 - 55">46 - 55</option>
-                              <option value="56 - 65">56 - 65</option>
-                              <option value="66 - 75">66 - 75</option>
-                              <option value="76 - 85">76 - 85</option>
-                              <option value="86 - 95">76 - 85</option>
-                            </select>
-                        </div>
+                  <div class="form-group">
+                        <label class="col-sm-2 control-label" for="age" id="number-label"> How old are you? </label>
+                     <div class="col-sm-10">
+                        <input type="number" name="age" id="number" min="18" max="100" class="form-control" placeholder="Age">
                     </div>
+                </div>            
+                          
                 <fieldset class="form-group">
                         <label class="col-sm-2 control-label">Gender</label>
                         <div class="form-check col-sm-3">
@@ -59,13 +54,13 @@
                         </div>
                         <div class="form-check col-sm-3">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                   Female
                                 </label>
                         </div>
                         <div class="form-check col-sm-3">
                                 <label class="form-check-label">
-                                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+                                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                                   Other
                                 </label>
                         </div>
@@ -81,130 +76,102 @@
                     </div>
                     <div class="form-check form-check-inline col-sm-3">
                         <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option2">
                           French
                         </label>
                     </div>
                     <div class="form-check form-check-inline col-sm-3">
                         <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option3">
                           The Mediterranean Sea
                         </label>
                     </div>
                     <div class="form-check form-check-inline col-sm-3">
                         <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                          <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option4">
                         Southeast Asia
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option5">
                       Far East
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option6">
                       Middle East
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option7">
                       North African
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option8">
                       Middle African
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option9">
                       South African
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option10">
                       American
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option11">
                       Mexican
                     </label>
                 </div>
                 <div class="form-check form-check-inline col-sm-3">
                     <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option1">
+                      <input type="checkbox" class="form-check-input" id="inlineCheckbox1" value="option12">
                       South America
                     </label>
                 </div>
-              </fieldset> 
-                <fieldset class="form-group">
-                    <label class="col-sm-2 control-label" id="cuisine-label">How often do you cook at home?</label>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Everyday
-                        </label>
-                    </div> 
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Once a week
-                        </label>
+               </fieldset> 
+                  <div class="form-group">
+                            <label class="col-sm-2 control-label">Where do you eat during your lunch break?</label>
+                            <div class="col-sm-10">
+                            <select class="form-control" id="dropdown">
+                              <option value=null>Please select the place</option>
+                              <option value="18 - 25">Home</option>
+                              <option value="26 - 35">Restaurant</option>
+                              <option value="36 - 45">The company's canteen</option>
+                              <option value="46 - 55">On the bench in the park</option>
+                              <option value="56 - 65">At workplace</option>
+                              <option value="66 - 75">In the shopping centre</option>
+                              <option value="66 - 75">Fast food restaurant.</option>
+                              <option value="76 - 85">I do not eat during lunch.</option>
+                              </select>
+                        </div>
                     </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          A couple of times a week
-                        </label>
+                      <div class="form-group">
+                           <label class="col-sm-2 control-label">Favorit dish</label>
+                      <div class="col-sm-10">
+                            <textarea class="form-control" id="focusedInput" type="email" value="Email" placeholder="Describe your favorite dish"></textarea>
+                 </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                      <div class="text-right">
+                        <button type="button" class="btn btn-warning">Submit</button>
+                      </div>
                     </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Only on weekends
-                        </label>
-                    </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Once a month
-                        </label>
-                    </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          Only during the holidays
-                        </label>
-                    </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          I do not prepare, but I love food made at home
-                        </label>
-                    </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          My family members prepare the food for me.
-                        </label>
-                    </div>
-                    <div class="form-check col-sm-3">
-                        <label class="form-check-label">
-                          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                          I do not prepare the food at home.
-                        </label>
-                    </div>
-                </fieldset>
-        </form>
-    </div> 
+                  </div>
+            </form>
+        </div> 
 </body>      
             
     
